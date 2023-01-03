@@ -1,0 +1,53 @@
+.container {
+    height: 150px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sección1 {
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    padding: 0.5rem;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    float: left;
+    }
+
+.sección2 {
+    height: 100%;
+    background-color: salmon;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    /* left: 130px; */
+    /* top: 10px; */
+    flex-direction: column;
+    }    
+
+span .sección2 {
+    flex-grow: 10;
+}
+
+@media (min-width: 640px) {
+    .sección1 {
+        flex-direction: row;
+        position: fixed;
+        bottom: 0px;
+        height: 10%;
+        width: 100%;
+    }
+
+    .sección2 {
+        flex-direction: row;
+        position: absolute;
+        bottom: 80px;
+        width: 100%;
+    }
+
+}
+
